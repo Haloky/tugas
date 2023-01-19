@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+</head>
+<body>
+<style>
+body{
+margin: 0;
+padding: 0;
+justify-content: center;
+align-items: center;
+text-align:center;
+background:wheat;
+width: 100%;
+height: 100%;
+font-family: sans-serif;
+font-size: 20px;
+
+}
+#tugas-tasya{
+width: 50%;
+background-color: white;
+height: 180px;
+overflow: hidden;
+justify-content: center;
+align-items: center;
+line-height: 150px;
+position: relative;
+box-shadow:rgba(2,2,2,.2) 5px 5px 1px;
+display: flex;
+margin: auto;
+top: 100px;
+
+}
+#tugas{
+white-space: nowrap;
+text-align: center;
+
+}
+
+#end{
+  width: 50%;
+  height: 50px;
+  top: 200px;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+  font-size: 19px;
+  display: flex;
+  margin: auto;
+  font-family: serif;
+  line-height: 50px;
+}
+#end::after{
+  content: "\😀";
+  position: relative;
+  left: 10px;
+}
+@media screen and  (max-width:442px) {
+  #tugas-tasya{
+    width: 95%;
+    height: 170px;
+    top: 10px;
+   
+  }
+  #end{
+    width: 70%;
+    top: 50px;
+    font-size: 14px;
+  }
+}
+
+
+</style>
+
+<div class="judul">
+  <h3>Tugas kelompok perang krakatau &#129312;</h3>
+</div>
+
+<div id="tugas-tasya">
+ <div id="tugas">
+<h4>
+Direktur pelaksana dana moneter internasional atau IMF, crystallina georgive pada 
+2023 akan gelap, karena menghadapi resiko Resesi dan ketidakstabilan pasar keuangan, 
+dan IMF juga menegaskan prospek ekonomi global gelap gulita, mengingat guncangan yang
+disebabkan oleh pandemik COVID-19, perang antara Rusia dan Ukraina. hingga bencana iklim di
+semua benua, Lantas apa dampaknya bagi Indonesia kita akan mengulasnya untuk Anda bersama ,
+ 2023 Resesi Dunia. dan Mari kita lihat bersama Resesi ekonomi adalah momok bagi semua negara 
+ di dunia, dan fenomena ini mempengaruhi sektor pajak investasi bahkan kualitas hidup masyarakat,
+dan perekonomian Global belum sepenuhnya pulih dari dampak pandemic COVID-19 seperti IMF bank dunia dan
+ juga Presiden Joko Widodo juga memanty-wanti adanya ancaman Resesi dan pak Jokowi juga menegaskan kembali 
+ mengenai Resesi Global tahun ini sulit, dan tahun depan Sekali lagi saya sampaikan akan gelap, dan kita tidak
+tahu badai besarnya Seperti apa, sekuat apa, dan tidak bisa dikalkulasi. Nah kalau misalnya kita melihat dalam
+ situasi Resesi biasanya perusahaan akan melakukan efisiensi, dan salah satunya melalui pengurangan beban gaji karyawan, 
+ alhasil ini pengangguran meningkat akibat PHK dan seperti fresh graduate juga akan sulit mencari pekerjaan Karena perusahaan 
+ berusaha memangkas karyawan, dan kita akan melihat apa sebenarnya penyebab Resesi Global, kita lihat kenaikan laju inflasi dunia ini
+meningkat bukan hanya di Indonesia saja kita bisa melihat kalau misalnya di negara maju seperti di Inggris, di Amerika Serikat, ini kenaikan laju 
+inflasinya sangat-sangat tinggi ini sudah mencapai rekor tertinggi, dan untuk menekan laju inflasi sebenarnya banyak sekali bank sentral di semua negara 
+akan menaikkan suku bunga acuannya, untuk menekan laju inflasinya, dan kita tidak boleh lupa apa sebenarnya perlambatan ekonomi ini sebenarnya pemicunya adalah
+ COVID-19, Jangan bosan ya dengan COVID-19 ini karena banyak sekali dampak yang kita rasakan saat ini, dan Selain itu kenaikan harga pangan dan juga energi,
+dampak perang Rusia, dan ini adalah salah satu alasan utama Resesi ekonomi global 2023 adalah perang Ukraina dan Rusia, pasalnya kedua negara ini merupakan
+ produsen utama komoditas dan juga energi dunia, akibat Perang ini harga komoditas terutama pangan dan juga energi melonjak tajam dengan cepat, Mari kita
+lihat bersama beberapa harga komoditas dunia yang market ini kita mempunyai datanya seperti gas alam sudah naik 125,8%, batubara naik 166%, minyak brand 
+naik 45,7%, minyak sawit mentah atau CPO ini juga sudah naik 20,9%, gandum beras naik 55,6%, jagung naik 31,5%, dan kedelai juga naik 28,1%, dan biji-biji 
+yang lainnya naik 15,5%, kenaikan harga komunitas ini sebenarnya sangat mendorong inflasi, dan kita juga melihat Indonesia sebagai negara komoditas ini
+ sangat penting, untuk menyoroti harga-harga komoditas, dan Bank Dunia juga memprediksi seandainya, Resesi memang terjadi dampaknya akan lebih dirasakan
+oleh negara-negara maju ketimbang negara-negara berkembang.</h4>
+</div>
+</div>
+
+
+<div id="end"></div>
+
+<script>
+var text = document.getElementById("tugas");
+var pos = 0;
+setInterval(function() {
+text.style.marginLeft = pos + "px";
+pos--;
+}, 2);
+
+// end
+
+var i = 0;
+var txt = 'Sekian dan terima gaji';
+var speed = 100;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("end").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+  
+}
+
+window.onload = typeWriter;
+
+</script>
+</body>
+</html>
